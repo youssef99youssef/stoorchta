@@ -39,19 +39,21 @@
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-      <!-- المنتج الأول -->
-      <!-- تغيير بيانات المنتج الأول من هنا -->
+      <!-- ========================================== -->
+      <!-- المنتج الأول: بيجامة كابيشو -->
+      <!-- ========================================== -->
       <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between">
         <div>
-          <div class="bg-gray-100 h-52 flex items-center justify-center text-gray-400 font-bold">
-            [ Screenshot_2.jpeg ]
+          <div class="h-64 bg-gray-100 overflow-hidden relative">
+            <!-- ⬇️ قم بتغيير مسار صورة المنتج الأول هنا ⬇️ -->
+            <img src="./Screenshot_2.jpeg" alt="بيجامة كابيشو للأطفال" class="w-full h-full object-cover">
           </div>
           <div class="p-4 space-y-2">
             <span class="bg-red-100 text-red-600 text-xs font-bold px-2.5 py-1 rounded-full">تخفيض ممتاز</span>
             <h3 class="font-bold text-lg text-gray-900">بيجامة أولاد/بنات كابيشو</h3>
             <p class="text-xs text-gray-500">بيجامة دافئة ومريحة جداً، قماش عالي الجودة متوفر بعدة مقاسات وألوان.</p>
             
-            <!-- تغيير أسعار المنتج الأول هنا -->
+            <!-- ⬇️ تغيير أسعار المنتج الأول من هنا ⬇️ -->
             <div class="flex items-center space-x-2 space-x-reverse pt-2">
               <span class="text-xl font-extrabold text-amber-700">99 درهم</span>
               <span class="text-sm text-gray-400 line-through">150 درهم</span>
@@ -66,19 +68,21 @@
         </div>
       </div>
 
-      <!-- المنتج الثاني -->
-      <!-- تغيير بيانات المنتج الثاني من هنا -->
+      <!-- ========================================== -->
+      <!-- المنتج الثاني: بيجامة توب مبرة -->
+      <!-- ========================================== -->
       <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between">
         <div>
-          <div class="bg-gray-100 h-52 flex items-center justify-center text-gray-400 font-bold">
-            [ صورة بيجامة توب مبرة ]
+          <div class="h-64 bg-gray-100 overflow-hidden relative">
+            <!-- ⬇️ قم بتغيير مسار صورة المنتج الثاني هنا ⬇️ -->
+            <img src="./images/pajama-mobra.jpg" alt="بيجامة توب مبرة للأطفال" class="w-full h-full object-cover">
           </div>
           <div class="p-4 space-y-2">
             <span class="bg-red-100 text-red-600 text-xs font-bold px-2.5 py-1 rounded-full">عرض خاص</span>
             <h3 class="font-bold text-lg text-gray-900">بيجامة أولاد توب مبرة</h3>
             <p class="text-xs text-gray-500">طقم بيجامة توب مبرة دافئ وأنيق جداً لموسم البرد.</p>
             
-            <!-- تغيير أسعار المنتج الثاني هنا -->
+            <!-- ⬇️ تغيير أسعار المنتج الثاني من هنا ⬇️ -->
             <div class="flex items-center space-x-2 space-x-reverse pt-2">
               <span class="text-xl font-extrabold text-amber-700">79 درهم</span>
               <span class="text-sm text-gray-400 line-through">120 درهم</span>
@@ -93,19 +97,21 @@
         </div>
       </div>
 
-      <!-- المنتج الثالث -->
-      <!-- تغيير بيانات المنتج الثالث من هنا -->
+      <!-- ========================================== -->
+      <!-- المنتج الثالث: كسوة ديال البرد -->
+      <!-- ========================================== -->
       <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between">
         <div>
-          <div class="bg-gray-100 h-52 flex items-center justify-center text-gray-400 font-bold">
-            [ صورة كسوة ديال البرد ]
+          <div class="h-64 bg-gray-100 overflow-hidden relative">
+            <!-- ⬇️ قم بتغيير مسار صورة المنتج الثالث هنا ⬇️ -->
+            <img src="./images/kiswa-chouli.jpg" alt="كسوة ديال البرد توب شولي" class="w-full h-full object-cover">
           </div>
           <div class="p-4 space-y-2">
             <span class="bg-red-100 text-red-600 text-xs font-bold px-2.5 py-1 rounded-full">الأكثر مبيعاً 🔥</span>
             <h3 class="font-bold text-lg text-gray-900">كسوة ديال البرد توب شولي</h3>
             <p class="text-xs text-gray-500">كسوة نسائية أنيقة لفصل الشتاء، قماش شولي ممتاز دافئ ومريح.</p>
             
-            <!-- تغيير أسعار المنتج الثالث هنا -->
+            <!-- ⬇️ تغيير أسعار المنتج الثالث من هنا ⬇️ -->
             <div class="flex items-center space-x-2 space-x-reverse pt-2">
               <span class="text-xl font-extrabold text-amber-700">149 درهم</span>
               <span class="text-sm text-gray-400 line-through">220 درهم</span>
@@ -194,11 +200,31 @@
       event.preventDefault();
 
       // ==========================================
-      // تغيير رقم الواتساب من هنا
+      // ⬇️ تغيير رقم الواتساب من هنا ⬇️
       // ==========================================
       const whatsappNumber = "212644733932";
 
       const product = document.getElementById('productSelect').value;
       const size = document.getElementById('sizeInput').value;
       const color = document.getElementById('colorInput').value;
-      const name = document.getElementById('nameInput').value
+      const name = document.getElementById('nameInput').value;
+      const phone = document.getElementById('phoneInput').value;
+      const city = document.getElementById('cityInput').value;
+      const address = document.getElementById('addressInput').value;
+
+      const message = `سلام عليكم، أريد تأكيد طلبي من متجر القطاري 🚂:%0A%0A` +
+        `📦 *المنتج:* ${product}%0A` +
+        `📏 *المقاس:* ${size}%0A` +
+        `🎨 *اللون:* ${color}%0A%0A` +
+        `👤 *الاسم:* ${name}%0A` +
+        `📱 *الهاتف:* ${phone}%0A` +
+        `🏙️ *المدينة:* ${city}%0A` +
+        `📍 *العنوان:* ${address}%0A%0A` +
+        `شكراً لكم!`;
+
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
