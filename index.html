@@ -3,219 +3,219 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>متجر القطاري - Al-Qitari Store</title>
+  <title>بيجامة الأطفال الدافئة - عروض الشتاء | متجر القطاري</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Tajawal', sans-serif; }
+    .gold-gradient { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
 
-  <!-- شريط التنبيهات العلوي -->
-  <div class="bg-amber-600 text-white text-center py-2 px-4 text-sm font-bold shadow-md">
-    🚚 توصيل مجاني لجميع المدن المغربية 🇲🇦 | الدفع عند الاستلام
+  <!-- شريط العرض العاجل -->
+  <div class="bg-red-600 text-white text-center py-2.5 px-4 text-xs md:text-sm font-black tracking-wide shadow-md flex items-center justify-center space-x-2 space-x-reverse">
+    <span class="animate-pulse">🔥</span>
+    <span>عروض الشتاء الكبرى: تخفيض حصري + توصيل مجاني لكل المدن المغربية 🇲🇦 | الدفع عند الاستلام</span>
   </div>
 
-  <!-- الهيدر واسم المتجر -->
+  <!-- الهيدر -->
   <header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
-    <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="max-w-3xl mx-auto px-4 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-2 space-x-reverse">
         <span class="text-3xl">🚂</span>
         <div>
-          <h1 class="text-2xl font-extrabold text-amber-700 tracking-wide">متجر القطاري</h1>
-          <p class="text-xs text-gray-500">جودة ممتازة بأفضل الأسعار في المغرب</p>
+          <h1 class="text-xl font-black text-amber-700 tracking-tight">متجر القطاري</h1>
+          <p class="text-[10px] text-gray-500 font-bold">دلال طفلك ودفئه في شتاء 2026</p>
         </div>
       </div>
-      <a href="#order-form" class="bg-green-600 hover:bg-green-700 text-white text-xs md:text-sm font-bold py-2 px-4 rounded-full transition">
-        اطلب الآن عبر واتساب
+      <a href="#order-form" class="bg-green-600 hover:bg-green-700 text-white text-xs font-extrabold py-2 px-4 rounded-full shadow transition transform hover:scale-105">
+        اطلب الآن 🛒
       </a>
     </div>
   </header>
 
-  <!-- قسم عرض المنتجات -->
-  <main class="max-w-4xl mx-auto px-4 py-8 space-y-8">
-    <h2 class="text-xl font-bold text-gray-800 border-r-4 border-amber-600 pr-3">كتالوج المنتجات والعروض الحصرية</h2>
+  <!-- القسم الرئيسي (Hero Section) -->
+  <main class="max-w-3xl mx-auto px-4 py-6 space-y-6">
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- العنوان الترويجي الرئيسي -->
+    <div class="text-center space-y-2">
+      <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full border border-amber-300">
+        ❄️ تشكيلة الشتاء الفاخرة للأطفال
+      </span>
+      <h2 class="text-2xl md:text-4xl font-black text-gray-900 leading-tight">
+        دلل طفلك بالدفء والراحة المطلقة مع طقم بيجامة المبرة الفاخرة 🧸
+      </h2>
+      <p class="text-gray-600 text-sm md:text-base font-medium max-w-xl mx-auto">
+        تصميم دافئ بألوان جذابة وقماش مبرة ناعم للغاية للحفاظ على سلامة وراحة أطفالكم في الأيام الباردة.
+      </p>
+    </div>
 
-      <!-- ========================================== -->
-      <!-- المنتج الأول: بيجامة كابيشو -->
-      <!-- ========================================== -->
-      <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between">
-        <div>
-          <div class="h-64 bg-gray-100 overflow-hidden relative">
-            <!-- ⬇️ قم بتغيير مسار صورة المنتج الأول هنا ⬇️ -->
-            <img src="./Screenshot_2.jpeg" alt="بيجامة كابيشو للأطفال" class="w-full h-full object-cover">
-          </div>
-          <div class="p-4 space-y-2">
-            <span class="bg-red-100 text-red-600 text-xs font-bold px-2.5 py-1 rounded-full">تخفيض ممتاز</span>
-            <h3 class="font-bold text-lg text-gray-900">بيجامة أولاد/بنات كابيشو</h3>
-            <p class="text-xs text-gray-500">بيجامة دافئة ومريحة جداً، قماش عالي الجودة متوفر بعدة مقاسات وألوان.</p>
-            
-            <!-- ⬇️ تغيير أسعار المنتج الأول من هنا ⬇️ -->
-            <div class="flex items-center space-x-2 space-x-reverse pt-2">
-              <span class="text-xl font-extrabold text-amber-700">99 درهم</span>
-              <span class="text-sm text-gray-400 line-through">150 درهم</span>
-            </div>
-            <p class="text-xs text-gray-400">المقاسات: 4، 6، 8، 10، 12، 14</p>
-          </div>
+    <!-- معرض صور المنتج المباشرة -->
+    <div class="bg-white rounded-3xl p-4 shadow-lg border border-gray-200 space-y-4">
+      <h3 class="font-bold text-center text-amber-800 text-sm">اختر اللون المفضل لطفلك (متوفر بـ 4 ألوان زاهية):</h3>
+      
+      <div class="grid grid-cols-2 gap-3">
+
+        <!-- صورة اللون الرمادي -->
+        <div class="border-2 border-amber-500 rounded-2xl overflow-hidden bg-gray-50 p-1 text-center">
+          <img src="pajama_grey.png" alt="بيجامة رمادي" class="w-full h-48 md:h-64 object-cover rounded-xl">
+          <span class="block mt-1 font-bold text-xs text-gray-700">رمادي أنيق</span>
         </div>
-        <div class="p-4 pt-0">
-          <button onclick="selectProduct('بيجامة أطفال كابيشو (99 درهم)')" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded-lg font-bold text-sm transition">
-            اختر هذا المنتج
-          </button>
+
+        <!-- صورة اللون الأخضر -->
+        <div class="border-2 border-gray-200 rounded-2xl overflow-hidden bg-gray-50 p-1 text-center">
+          <img src="pajama_green.png" alt="بيجامة أخضر" class="w-full h-48 md:h-64 object-cover rounded-xl">
+          <span class="block mt-1 font-bold text-xs text-gray-700">أخضر جذاب</span>
         </div>
+
+        <!-- صورة اللون الأزرق -->
+        <div class="border-2 border-gray-200 rounded-2xl overflow-hidden bg-gray-50 p-1 text-center">
+          <img src="pajama_blue.png" alt="بيجامة أزرق" class="w-full h-48 md:h-64 object-cover rounded-xl">
+          <span class="block mt-1 font-bold text-xs text-gray-700">أزرق ملكي</span>
+        </div>
+
+        <!-- صورة اللون الأسود -->
+        <div class="border-2 border-gray-200 rounded-2xl overflow-hidden bg-gray-50 p-1 text-center">
+          <img src="pajama_black.png" alt="بيجامة أسود" class="w-full h-48 md:h-64 object-cover rounded-xl">
+          <span class="block mt-1 font-bold text-xs text-gray-700">أسود مميز</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- صندوق السعر والتخفيض -->
+    <div class="bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-3xl p-6 text-center shadow-lg space-y-3">
+      <p class="text-xs uppercase font-extrabold tracking-widest text-amber-100">سعر العرض الحصري اليوم</p>
+      
+      <!-- ⬇️ تغيير الثمن والعرض هنا ⬇️ -->
+      <div class="flex items-center justify-center space-x-3 space-x-reverse">
+        <span class="text-4xl md:text-5xl font-black">79 درهم</span>
+        <span class="text-lg md:text-xl text-amber-200 line-through font-bold">120 درهم</span>
       </div>
 
-      <!-- ========================================== -->
-      <!-- المنتج الثاني: بيجامة توب مبرة -->
-      <!-- ========================================== -->
-      <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between">
-        <div>
-          <div class="h-64 bg-gray-100 overflow-hidden relative">
-            <!-- ⬇️ قم بتغيير مسار صورة المنتج الثاني هنا ⬇️ -->
-            <img src="./images/pajama-mobra.jpg" alt="بيجامة توب مبرة للأطفال" class="w-full h-full object-cover">
-          </div>
-          <div class="p-4 space-y-2">
-            <span class="bg-red-100 text-red-600 text-xs font-bold px-2.5 py-1 rounded-full">عرض خاص</span>
-            <h3 class="font-bold text-lg text-gray-900">بيجامة أولاد توب مبرة</h3>
-            <p class="text-xs text-gray-500">طقم بيجامة توب مبرة دافئ وأنيق جداً لموسم البرد.</p>
-            
-            <!-- ⬇️ تغيير أسعار المنتج الثاني من هنا ⬇️ -->
-            <div class="flex items-center space-x-2 space-x-reverse pt-2">
-              <span class="text-xl font-extrabold text-amber-700">79 درهم</span>
-              <span class="text-sm text-gray-400 line-through">120 درهم</span>
-            </div>
-            <p class="text-xs text-gray-400">المقاسات: 2، 4، 6، 8، 10، 12</p>
-          </div>
-        </div>
-        <div class="p-4 pt-0">
-          <button onclick="selectProduct('بيجامة أطفال توب مبرة (79 درهم)')" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded-lg font-bold text-sm transition">
-            اختر هذا المنتج
-          </button>
-        </div>
+      <div class="inline-block bg-white text-amber-800 text-xs font-black px-4 py-1.5 rounded-full shadow">
+        وفر 41 درهم اليوم + التوصيل مجاني 🚚
       </div>
+      <p class="text-xs text-amber-100">المقاسات المتوفرة للأطفال: (2 - 4 - 6 - 8 - 10 - 12)</p>
+    </div>
 
-      <!-- ========================================== -->
-      <!-- المنتج الثالث: كسوة ديال البرد -->
-      <!-- ========================================== -->
-      <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 flex flex-col justify-between">
-        <div>
-          <div class="h-64 bg-gray-100 overflow-hidden relative">
-            <!-- ⬇️ قم بتغيير مسار صورة المنتج الثالث هنا ⬇️ -->
-            <img src="./images/kiswa-chouli.jpg" alt="كسوة ديال البرد توب شولي" class="w-full h-full object-cover">
-          </div>
-          <div class="p-4 space-y-2">
-            <span class="bg-red-100 text-red-600 text-xs font-bold px-2.5 py-1 rounded-full">الأكثر مبيعاً 🔥</span>
-            <h3 class="font-bold text-lg text-gray-900">كسوة ديال البرد توب شولي</h3>
-            <p class="text-xs text-gray-500">كسوة نسائية أنيقة لفصل الشتاء، قماش شولي ممتاز دافئ ومريح.</p>
-            
-            <!-- ⬇️ تغيير أسعار المنتج الثالث من هنا ⬇️ -->
-            <div class="flex items-center space-x-2 space-x-reverse pt-2">
-              <span class="text-xl font-extrabold text-amber-700">149 درهم</span>
-              <span class="text-sm text-gray-400 line-through">220 درهم</span>
-            </div>
-            <p class="text-xs text-gray-400">المقاسات: مقاس موحد (Standard)</p>
-          </div>
-        </div>
-        <div class="p-4 pt-0">
-          <button onclick="selectProduct('كسوة البرد توب شولي (149 درهم)')" class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded-lg font-bold text-sm transition">
-            اختر هذا المنتج
-          </button>
-        </div>
-      </div>
-
+    <!-- مميزات المنتج -->
+    <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100 space-y-4">
+      <h3 class="text-lg font-black text-gray-900 border-r-4 border-amber-600 pr-3">لماذا تختار بيجامة القطاري لطفلك؟</h3>
+      <ul class="space-y-3 text-xs md:text-sm text-gray-700 font-bold">
+        <li class="flex items-center space-x-2 space-x-reverse">
+          <span class="text-green-500 text-base">✓</span>
+          <span>قماش توب مبرة ممتاز دافئ وجد ناعم على بشرة الأطفال.</span>
+        </li>
+        <li class="flex items-center space-x-2 space-x-reverse">
+          <span class="text-green-500 text-base">✓</span>
+          <span>ألوان ثابتة لا تتغير مع الغسيل المتكرر.</span>
+        </li>
+        <li class="flex items-center space-x-2 space-x-reverse">
+          <span class="text-green-500 text-base">✓</span>
+          <span>قصة مريحة تمنح طفلك الحرية الكاملة أثناء اللعب والنوم.</span>
+        </li>
+        <li class="flex items-center space-x-2 space-x-reverse">
+          <span class="text-green-500 text-base">✓</span>
+          <span>ضمان الجودة: المعاينة قبل الدفع عند الاستلام.</span>
+        </li>
+      </ul>
     </div>
 
     <!-- استمارة الطلب المربوطة بالواتساب -->
-    <section id="order-form" class="bg-white rounded-2xl shadow-lg border border-amber-200 p-6 md:p-8 space-y-6 mt-12">
-      <div class="border-b border-gray-100 pb-4">
-        <h3 class="text-2xl font-bold text-amber-800">استمارة معلومات التوصيل 🛒</h3>
-        <p class="text-sm text-gray-500">المرجو ملء البيانات التالية لإتمام الطلب وسنقوم بالتواصل معك على الفور</p>
+    <section id="order-form" class="bg-white rounded-3xl shadow-xl border-2 border-amber-500 p-6 md:p-8 space-y-5">
+      <div class="text-center space-y-1 border-b border-gray-100 pb-4">
+        <h3 class="text-2xl font-black text-amber-800">استمارة الطلب السريع 🛒</h3>
+        <p class="text-xs text-gray-500 font-bold">يرجى ملء البيانات وسنقوم بالتواصل معك لتأكيد التوصيل</p>
       </div>
 
       <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
-        
+
         <div>
-          <label class="block text-sm font-bold text-gray-700 mb-1">المنتج المطلوب:</label>
-          <select id="productSelect" required class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none">
-            <option value="">-- اختر المنتج من القائمة --</option>
-            <option value="بيجامة أطفال كابيشو (99 درهم)">بيجامة أطفال كابيشو - 99 درهم</option>
-            <option value="بيجامة أطفال توب مبرة (79 درهم)">بيجامة أطفال توب مبرة - 79 درهم</option>
-            <option value="كسوة البرد توب شولي (149 درهم)">كسوة البرد توب شولي - 149 درهم</option>
+          <label class="block text-xs font-extrabold text-gray-700 mb-1">اللون المطلوب:</label>
+          <select id="colorInput" required class="w-full p-3 bg-gray-50 border border-gray-300 rounded-xl font-bold text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+            <option value="">-- اختر اللون --</option>
+            <option value="رمادي">رمادي</option>
+            <option value="أخضر">أخضر</option>
+            <option value="أزرق">أزرق</option>
+            <option value="أسود">أسود</option>
           </select>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-sm font-bold text-gray-700 mb-1">المقاس المطلوب:</label>
-            <input type="text" id="sizeInput" placeholder="مثال: 8 / 10 / Standard" required class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none">
-          </div>
-          <div>
-            <label class="block text-sm font-bold text-gray-700 mb-1">اللون المطلوب:</label>
-            <input type="text" id="colorInput" placeholder="مثال: رمادي / أزرق / وردي" required class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none">
-          </div>
+        <div>
+          <label class="block text-xs font-extrabold text-gray-700 mb-1">المقاس المطلوب:</label>
+          <select id="sizeInput" required class="w-full p-3 bg-gray-50 border border-gray-300 rounded-xl font-bold text-sm focus:ring-2 focus:ring-amber-500 outline-none">
+            <option value="">-- اختر المقاس --</option>
+            <option value="2 سنة">مقاس 2</option>
+            <option value="4 سنوات">مقاس 4</option>
+            <option value="6 سنوات">مقاس 6</option>
+            <option value="8 سنوات">مقاس 8</option>
+            <option value="10 سنوات">مقاس 10</option>
+            <option value="12 سنة">مقاس 12</option>
+          </select>
         </div>
 
         <div>
-          <label class="block text-sm font-bold text-gray-700 mb-1">الاسم الكامل:</label>
-          <input type="text" id="nameInput" placeholder="أدخل اسمك الكامل" required class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none">
+          <label class="block text-xs font-extrabold text-gray-700 mb-1">الاسم الكامل:</label>
+          <input type="text" id="nameInput" placeholder="أدخل اسمك الكامل" required class="w-full p-3 bg-gray-50 border border-gray-300 rounded-xl font-bold text-sm focus:ring-2 focus:ring-amber-500 outline-none">
         </div>
 
         <div>
-          <label class="block text-sm font-bold text-gray-700 mb-1">رقم الهاتف (واتساب):</label>
-          <input type="tel" id="phoneInput" placeholder="06XXXXXXXX" required class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none">
+          <label class="block text-xs font-extrabold text-gray-700 mb-1">رقم الهاتف (واتساب):</label>
+          <input type="tel" id="phoneInput" placeholder="06XXXXXXXX" required class="w-full p-3 bg-gray-50 border border-gray-300 rounded-xl font-bold text-sm focus:ring-2 focus:ring-amber-500 outline-none">
         </div>
 
         <div>
-          <label class="block text-sm font-bold text-gray-700 mb-1">المدينة:</label>
-          <input type="text" id="cityInput" placeholder="مثال: الدار البيضاء، الرباط..." required class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none">
+          <label class="block text-xs font-extrabold text-gray-700 mb-1">المدينة:</label>
+          <input type="text" id="cityInput" placeholder="مثال: الدار البيضاء، بني ملال، الرباط..." required class="w-full p-3 bg-gray-50 border border-gray-300 rounded-xl font-bold text-sm focus:ring-2 focus:ring-amber-500 outline-none">
         </div>
 
         <div>
-          <label class="block text-sm font-bold text-gray-700 mb-1">العنوان الكامل:</label>
-          <textarea id="addressInput" rows="2" placeholder="أدخل عنوان السكن للتوصيل" required class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-amber-500 outline-none"></textarea>
+          <label class="block text-xs font-extrabold text-gray-700 mb-1">العنوان الكامل:</label>
+          <textarea id="addressInput" rows="2" placeholder="أدخل الحي والشارع لتسهيل التوصيل" required class="w-full p-3 bg-gray-50 border border-gray-300 rounded-xl font-bold text-sm focus:ring-2 focus:ring-amber-500 outline-none"></textarea>
         </div>
 
-        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl text-lg shadow-lg hover:shadow-xl transition flex items-center justify-center space-x-2 space-x-reverse">
-          <span>تأكيد الطلب عبر واتساب 💬</span>
+        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-black py-4 rounded-2xl text-lg shadow-lg hover:shadow-xl transition transform active:scale-95 flex items-center justify-center space-x-2 space-x-reverse">
+          <span>تأكيد الطلب الآن عبر واتساب 💬</span>
         </button>
 
       </form>
     </section>
+
   </main>
 
-  <footer class="bg-gray-800 text-gray-400 text-center py-6 mt-12 text-sm">
-    <p>© 2026 جميع الحقوق محفوظة - متجر القطاري</p>
+  <!-- الفوتر -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6 mt-12 text-xs font-bold space-y-2">
+    <p>© 2026 جميع الحقوق محفوظة - متجر القطاري 🚂</p>
+    <p class="text-gray-500">توصيل سريع لكافة أرجاء المملكة المغربية 🇲🇦</p>
   </footer>
 
   <script>
-    function selectProduct(productName) {
-      document.getElementById('productSelect').value = productName;
-      document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
-    }
-
     function sendToWhatsApp(event) {
       event.preventDefault();
 
       // ==========================================
-      // ⬇️ تغيير رقم الواتساب من هنا ⬇️
+      // ⬇️ رقم الواتساب المربوط ⬇️
       // ==========================================
       const whatsappNumber = "212644733932";
 
-      const product = document.getElementById('productSelect').value;
-      const size = document.getElementById('sizeInput').value;
+      // ⬇️ اسم المنتج والثمن المصاغ للطلب ⬇️
+      const productName = "بيجامة أولاد توب مبرة (عرض الشتاء)";
+      const price = "79 درهم";
+
       const color = document.getElementById('colorInput').value;
+      const size = document.getElementById('sizeInput').value;
       const name = document.getElementById('nameInput').value;
       const phone = document.getElementById('phoneInput').value;
       const city = document.getElementById('cityInput').value;
       const address = document.getElementById('addressInput').value;
 
-      const message = `سلام عليكم، أريد تأكيد طلبي من متجر القطاري 🚂:%0A%0A` +
-        `📦 *المنتج:* ${product}%0A` +
-        `📏 *المقاس:* ${size}%0A` +
-        `🎨 *اللون:* ${color}%0A%0A` +
+      const message = `السلام عليكم، أريد تأكيد طلب جديد من متجر القطاري 🚂:%0A%0A` +
+        `📦 *المنتج:* ${productName}%0A` +
+        `💰 *الثمن:* ${price}%0A` +
+        `🎨 *اللون:* ${color}%0A` +
+        `📏 *المقاس:* ${size}%0A%0A` +
         `👤 *الاسم:* ${name}%0A` +
         `📱 *الهاتف:* ${phone}%0A` +
         `🏙️ *المدينة:* ${city}%0A` +
@@ -226,5 +226,6 @@
       window.open(whatsappUrl, '_blank');
     }
   </script>
+
 </body>
 </html>
